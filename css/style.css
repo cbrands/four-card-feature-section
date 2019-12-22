@@ -95,3 +95,40 @@ h2 {
   margin: 40px 20px 0 auto;
   width: 80px;
 }
+
+@media(min-width: 700px) {
+  body {
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      " . card-top . "
+      " card-left card-top card-right"
+      " card-left card-bottom card-right"
+      " . card-bottom . "
+      "footer footer footer";
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  .card-supervisor {
+    grid-area: card-left;
+  }
+
+  .card-team {
+    grid-area: card-top;
+  }
+
+  .card-karma {
+    grid-area: card-bottom;
+  }
+
+  .card-calculator {
+    grid-area: card-right;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
