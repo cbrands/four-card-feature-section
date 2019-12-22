@@ -15,28 +15,29 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   line-height: 1.6;
+  background-color: var(--very-light-gray);
 }
 
 header {
   text-align: center;
   margin: 100px 50px;
-  line-height: 2;
+  line-height: 1.8;
 }
 
 h1, 
 h2 {
   letter-spacing: 1px;
   font-size: 2rem;
-  color: var(--grayish-blue);
+  margin: 0 auto;
 }
 
 h1 {
-  margin: 0 auto;
+  color: var(--very-dark-blue);
 }
 
 h2 {
   font-weight: 200;
-  margin: 0 auto;
+  color: var(--grayish-blue);
 }
 
 .header-text {
@@ -50,4 +51,47 @@ h2 {
   .header-text {
     font-size: 1rem;
   }
+}
+
+.card {
+  background-color: white;
+  margin: 40px auto;
+  max-width: 500px;
+  border-radius: 5px;
+  padding: 50px;
+  box-shadow: 0 16px 16px var(--grayish-blue);
+}
+
+.card-supervisor {
+  border-top: 3px solid var(--cyan);
+}
+
+.card-team {
+  border-top: 3px solid var(--red);
+}
+
+.card-karma {
+  border-top: 3px solid var(--orange);
+}
+
+.card-calculator {
+  border-top: 3px solid var(--blue);
+}
+
+.card-heading {
+  color: var(--very-dark-blue);
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: var(--grayish-blue);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.icon {
+  display: block;
+  margin: 40px 20px 0 auto;
+  width: 80px;
 }
